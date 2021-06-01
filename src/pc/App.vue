@@ -1,9 +1,8 @@
 <template>
-  <div id="app">
-    <div class="flex space-around router">
+  <div>
+    <!-- <div class="flex space-around router">
       <router-link to="/home">Home</router-link>
-      <router-link to="/introduce">Introduce</router-link>
-    </div>
+    </div> -->
     <router-view></router-view>
   </div>
 </template>
