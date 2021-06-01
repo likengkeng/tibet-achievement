@@ -9,6 +9,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "allowJs": true,
+    "strict": true,
     "sourceMap": true,
     "noImplicitReturns": true,
     "target": "esnext",
