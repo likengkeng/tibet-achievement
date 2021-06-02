@@ -1,7 +1,7 @@
 export const jumpToContent = (className: string) => {
   const jump = document.getElementsByClassName(className) || [{}];
   // 获取需要滚动的距离
-  const total = (jump[0] as any).offsetTop;
+  const total = (jump[0] as any).offsetTop - 68;
   // Chrome
   document.body.scrollTop = total;
   // Firefox

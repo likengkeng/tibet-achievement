@@ -11,7 +11,12 @@
           :is="contenItem.content">
         </component>
       </div>
-      <div class="left-menu" v-sticky="{top: '-80px', width: '362px', right: '0px', height: 1246}">
+      <div class="left-menu" v-sticky="{
+        top: '68px',
+        width: '362px',
+        right: '0px',
+        zIndex: '9998',
+      }">
         <anchor-navigator :menuList="menuList" :current="currentMenu"></anchor-navigator>
       </div>
     </div>
