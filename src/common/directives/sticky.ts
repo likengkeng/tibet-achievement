@@ -1,6 +1,6 @@
 export default {
   mounted(el: HTMLElement, binding: any) {
-    const { top, width, right, left, height } = binding.value || {};
+    const { top, width, right, left, height, zIndex } = binding.value || {};
     const divOffsetTop = height || 1098;
     window.addEventListener('scroll',function(){
 			const div = el;
@@ -26,7 +26,7 @@ export default {
         if (left) {
           div.style.left = left;
         }
-        div.style.zIndex = '9999';
+        div.style.zIndex = zIndex || '9999';
 		 	}
 		});
   }
