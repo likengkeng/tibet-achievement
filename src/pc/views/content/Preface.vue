@@ -13,7 +13,8 @@ export default defineComponent({
   props: {
 
   },
-  setup() {}
+  setup() {
+  }
 })
 </script>
 <style scoped lang="scss">

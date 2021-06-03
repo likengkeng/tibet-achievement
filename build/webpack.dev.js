@@ -8,9 +8,6 @@ module.exports = merge(common, {
   cache: {
     type: 'filesystem',
   },
-  output: {
-    filename: '[name].bundle.js',
-  },
   devServer: {
     contentBase: '../dist',
     overlay: true,

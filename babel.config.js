@@ -5,6 +5,9 @@ module.exports = {
       {
         useBuiltIns: 'usage', // 按需引入 polyfill
         corejs: 3,
+        targets: {
+          browsers: ["last 3 versions", "ie >= 10"]
+        }
       },
     ],
     [
@@ -15,11 +18,11 @@ module.exports = {
     ],
   ],
   plugins: [
-    [
-      '@babel/plugin-transform-runtime',
+    [ '@babel/plugin-transform-runtime',
       {
-        corejs: 3,
-      },
-    ],
+        "proposals": true,
+        "corejs": 3
+      }
+    ]
   ],
 }

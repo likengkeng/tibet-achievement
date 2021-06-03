@@ -63,6 +63,7 @@ export default defineComponent({
       width: 136px;
       background: #B01516;
       color: #FFFFFF;
+      cursor: pointer;
     }
   }
 }

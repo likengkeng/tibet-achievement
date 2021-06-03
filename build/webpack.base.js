@@ -40,6 +40,7 @@ module.exports = {
       {
         test: /\.(t|j)s$/,
         exclude: /node_modules/,
+        include: [resolve('src')],
         use: [
           {
             loader: 'babel-loader',

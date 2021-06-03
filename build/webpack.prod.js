@@ -15,6 +15,7 @@ var plugins = [
 ]
 
 module.exports = merge(common, {
+  devtool: 'source-map',
   optimization: {
     emitOnErrors: true, //  在编译时每当有错误时，就会 emit asset
     // 分离chunks
@@ -80,6 +81,7 @@ module.exports = merge(common, {
   output: {
     filename: 'js/[name].[contenthash].js',
     path: path.resolve(__dirname, '../dist'),
+    publicPath: './',
     environment: {
       arrowFunction: false,
       destructuring: false,

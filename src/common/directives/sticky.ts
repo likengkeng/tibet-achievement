@@ -1,7 +1,7 @@
 export default {
   mounted(el: HTMLElement, binding: any) {
     const { top, width, right, left, height, zIndex } = binding.value || {};
-    const divOffsetTop = height || 1098;
+    const divOffsetTop = height || 1078;
     window.addEventListener('scroll',function(){
 			const div = el;
 			// 计算页面滚动了多少（需要区分不同浏览器）
