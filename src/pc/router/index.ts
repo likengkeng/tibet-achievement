@@ -1,10 +1,10 @@
 /* eslint-disable */
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 // 路由懒加载
 const HelloWorld = () => import('@/pc/components/HelloWorld.vue');
 const Home = () => import('@/pc/views/Home.vue');
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     { path: '/', redirect: { name: 'home' } },
     {

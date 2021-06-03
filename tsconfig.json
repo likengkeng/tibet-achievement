@@ -12,7 +12,7 @@
     "strict": true,
     "sourceMap": true,
     "noImplicitReturns": true,
-    "target": "esnext",
+    "target": "es5",
     "experimentalDecorators": true,
     "baseUrl": ".",
     "paths": {
